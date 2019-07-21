@@ -1,16 +1,34 @@
-body {
-	font-family: 'Roboto Slab', serif;
-	padding: 0px;
+@font-face {
+font-family: 'Avenir Next Cyr Medium';
+src: url('AvenirNextCyr-Medium.eot');
+src: url('AvenirNextCyr-Medium.eot?#iefix') format('embedded-opentype'),
+url('../fonts/AvenirNextCyr-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}  /* font-family: 'Avenir Next Cyr Medium'; */
+
+@font-face {
+font-family: 'Avenir Next Cyr Bold';
+src: url('AvenirNextCyr-Bold.eot');
+src: url('AvenirNextCyr-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/AvenirNextCyr-Bold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}   /* font-family: 'Avenir Next Cyr Bold'; */
+
+
+@font-face {
+font-family: 'Avenir Next Cyr Demi';
+src: url('AvenirNextCyr-Demi.eot');
+src: url('AvenirNextCyr-Demi.eot?#iefix') format('embedded-opentype'),
+url('../fonts/AvenirNextCyr-Demi.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+} /* font-family: 'Avenir Next Cyr Demi'; */
+
+p {
 	margin: 0px;
-
-}
-
-a, p, img, button, form {
-	box-sizing: border-box;
-}
-
-a {
-	text-decoration: none; 
+	position: 0px;
 }
 
 ul, li {
@@ -19,364 +37,893 @@ ul, li {
 	padding: 0px;
 }
 
-h2, h3 {
-	margin: 0px;
-	padding: 0px;
+hr {
+	border-top: 5px solid #0D0506;
+	margin-left: 15px;
+	margin-top: 50px;
+	display: inline-block;
+	margin-bottom: 12px;
 }
 
-.content {
-	display: flex;
-	width: 100%;
-	max-width: 1024px;
-	margin: 0 auto;
+.header-icon {
+	margin-right: 5px;
 }
 
-.head-con {
-	margin: 15px auto;
+.header-menu {
+	margin-top: 21px;
+	margin-bottom: 21px;
 }
 
-.logo {
-	font-family: 'Lobster', cursive;
-	font-size: 49px; 
-	color: #83d9d0;
+.header-text {
+	color: #2A292D;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	text-decoration: none;
 }
 
-.content-left{
-	margin-left: auto;
-	display: flex;
-	align-items: center;
-}
-.shop {
-	width: 40px;
-	height: 37px;
+.header-text:hover {
+	color: #FF2E4B;
+	text-decoration: underline;
+	text-decoration-color: #FF2E4B;
 }
 
-.summ {
-	font-size: 33px;
-	text-align: right;
-	color: #b6b6b6;
-	margin: 0px;
-	padding-left: 16px;
+.header-number {
+	margin-top: 7.9px;
+	margin-bottom: 11px;
 }
+
+.header-number-phone {
+	color: #FF2E4B;
+	margin-left: 9px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+
+}
+
+.header-number-mode {
+	margin-left: 34px;
+	font-family: 'PT Sans', sans-serif;
+	color: #2A292D;
+	font-size: 13px; 
+	font-weight: 400;
+}
+
+.header-login-input:after {
+	content: "";
+	border-right: 1px solid #A09996;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 .menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	background-color: #0D0506;
+}	
+
+.menu-bg {
+	background: url(../img/bg-1.png) no-repeat center;
 }
 
-.menu__item {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #fff;
-	border-right: 2px solid #fff;
-	padding: 0px 15px 0px 13px;
-	word-spacing: 2px;
-
-	transition: color,background-color 0.2s linear;
-
+.menu-conteiner {
+	background-color: #FF2E4B;
 }
 
-.menu__item:hover {
-	color: #4ccfc1;
-	background-color: #fff;
+.menu-conteiner-selector {
+	cursor: pointer;
+	padding: 40px 22px 39px 22px;
 }
 
-.last__item {
+.menu-input {
+	width: 100%;
+	height: 36px;
+	border-radius: 5px;
 	border: none;
 }
 
-.nav {
-	padding: 10px 0px;
+.menu-input-icon {
+	position: absolute; 
 }
 
-.content__nav {
-	background-color: #4ccfc1;
+.menu-input-icon-img {
+	margin: 10px 20px 10px 0px;
+	border-left: 1px solid #A09996;
+	padding-left: 15px;
+	cursor: pointer;
 }
 
-.slider__box {
-	background-color: #3cc3b6;s
+.menu-favorite {
+	margin-left: 6px;
 }
 
-.slider {
-	display: flex;
+.menu-shop {
+	padding: 9px 20px;
+	background-color: #FF2E4B;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
-.slider-left {
-	width: 75%;
-	text-align: center;
-	padding: 50px 90px 0px 70px;
+.menu-shop:hover,
+.menu-shop-text:hover {
+	background-color: #430202;
+	color: #FF2E4B;
+	text-decoration: underline;
+	text-decoration-color: #FF2E4B;
 }
 
-.slider__img {
-	width: 277px;
-	height: 340px;
+.menu-shop-text {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	margin-left: 4px; 
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
-.slider-right {
+.menu-favorite-text {
+	color: #FFFFFF;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px; 
+	text-decoration: none;
+}
+
+.menu-favorite-icon {
+	margin-right: 4px;
+	margin-left: 5px;
+}
+
+.menu-favorite-text:hover {
+	color: #FF2E4B;
+	text-decoration: underline;
+	text-decoration-color: #FF2E4B;
+}
+
+.slider-container {
+	overflow-x:hidden;
+	background: url(../img/bg-2.png) no-repeat right, linear-gradient(to bottom, #FFD302, #F3C800);
+}
+
+.slider-conteiner-content {
+	margin-left: 0px;
+	margin-right: 0px; 
+}
+
+
+.slider-container-title {
+	font-family: 'Avenir Next Cyr Bold';
+	font-size: 48px;
+	margin-top: 69px;
+	color: #0D0506;
+	text-transform: uppercase;
+}
+
+.slider-container-subtitle {
+	color: #0D0506;
+	font-family: 'Avenir Next Cyr Bold';
+	font-size: 100px;
+	margin-top: 19px;
+	display: block;
+}
+
+.slider-container-text {
+	margin-top: 35px;
+	margin-left: 24px;
+}
+
+.slider-container-content-text {
+	text-transform: uppercase;
+	color: #0D0506;
+	font-family: 'Avenir Next Cyr Medium';
+	font-size: 23px;
+}
+
+.slider-container-content-title {
+	font-family: 'Avenir Next Cyr Bold';
+	font-size: 48px;
+	color: #0D0506;
+	text-transform: uppercase;
+}
+
+.slider-button-cond {
+	margin-top: 37px;
+}
+
+.button {
+	padding: 9px 71px;
+	background-color: #0D0506;
+	border-radius: 5px;
+	border: none;
+}
+
+.button:hover {
+	background-color: #FF2E4B;
+}
+
+.button-text {
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+.button-arrow {
+	padding-left: 8px;
+}
+
+.slider-cond-text {
+	color: #A09996;
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+.slider-cond-star {
+	font-size: 13px;
+	margin-right: 7px;
+	margin-left: 20px;
+}
+
+.slider-dots {
+	padding-bottom: 40px;
+	margin-top: 19px;
+}
+
+.slider-dots-dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0px 15px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+
+.items {
+	margin-top: 82px;
+	cursor: pointer;
+
+}
+
+.choice-title {
+	font-family: 'Prata', serif;
+	font-size: 36px;
+	margin-left: 37px;
+	color: #0D0506;
+}
+
+.item-img {
+	background: url(../img/bg-3.png) no-repeat center;
+	position: relative;	
 	width: 100%;
-	padding-top: 55px;
+	height: 267px;
+
+}
+
+.whithSubItem {
+	position: absolute;
+	right: 4%;
+	bottom: 0%;
+}
+
+.item-text {
+	text-align: center;
+	margin-top: 48px
+}
+
+.item-text-title {
+	font-family: 'Avenir Next Cyr Medium';
+	font-size: 20px;
+	color: #0D0506;
+	margin-bottom: 18px;
+}
+
+.item-text-name {
+	color: #A09996;
+	font-size: 18px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+
+
+.item:before {
+	content: "";
+	display: block;
+	height: 1px;
+	background-color: #0D0506;
+	transform: translateY(-44px) scale(0);
+
+	transition: all 0.2s;
+}
+
+.item:after {
+	content: "";
+	display: block;
+	height: 1px;
+	background-color: #0D0506;
+	transform: translateY(44px) scale(0);
+	transition: all 0.2s;
+}
+
+.item:hover:before {
+	transform: translateY(-44px) scale(1);
+}
+
+.item:hover:after {
+	transform: translateY(44px) scale(1);
+}
+
+.item-btn{
+	margin: 77px 0px 70px 0px;
+}
+
+.offer {
+	margin-bottom: 70px;
+}
+
+.offer-1 {
+	padding-right: 15px;
+}
+
+.offer-text {
+	border-radius: 2px;
+	padding: 17px 20px 27px 20px;
 	
 }
 
-.slider-title {
-	color: #fff;
-	font-size: 45px;
-	text-align: left;
-	font-family: 'Roboto Slab';
-	font-weight: 700;
-	line-height: 1.1;
+.offer-1 .offer-text {
+	background: url(../img/bg-5.png) no-repeat bottom right, #F79E42;
+	position: relative;
 }
 
-.slider__text {
-	font-size: 17px;
-	width: 75%;
-	color: #fff;
-	font-family: 'Roboto Slab';
-	font-weight: 400;
-	text-align: left;
-}
-
-.batton {
-
-}
-
-.btn1 {
-	margin-top: 15px;
-	display: block;
-	position: absolute;
+.offer-title {
+	font-family: 'Avenir Next Cyr Bold';
 	text-transform: uppercase;
-	border: 3px solid #fff;
-	border-radius: 8px;
-	padding: 6px 16px;
+	font-size: 28px;
 	color: #fff;
-	font-size: 22px; 
-
-	transition: background-color,color .2s linear;
 }
 
-.btn1:hover {
-	background-color: #fff;
-	color: #3cc3b6;
-}
-
-.dots {
-	text-align: center;
-	margin-left: 5%;
-	padding-bottom: 30px;
-}
-
-.dot {
-	cursor: pointer;
-	height: 10px;
-	width: 10px;
-	margin: 0px 2px;
-	background-color: #fff;
-	border-radius: 50%;
-	display: inline-block;
-
-	transition: background-color .2s ease;
-}
-
-.active, .dot:hover {
-	background-color: #5ecec2;
-}
-
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.3s;
-  animation-name: fade;
-  animation-duration: 1.3s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .2} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .2} 
-  to {opacity: 1}
-}
-
-.items {
-	margin-top: 27px;
-	justify-content: space-between;
-	margin-bottom: 22px;
-}
-
-.item {
-	display: flex;
-	margin: 0px 10px;
-}
-
-.item__img {
-	width: 217px;
-	height: 151px;
-}
-
-.item__img--two {
-	width: 150px;
-	height: 151px;
-}
-
-.item__img--three {
-	width: 130px;
-	height: 151px;
-}
-
-.item__text {
-	text-transform: uppercase;
-	color: #999999;
+.offer-item {
+	font-family: 'Avenir Next Cyr Medium';
 	font-size: 20px;
-	text-align: left;
-	vertical-align: center; 
-	margin: 20px 0px;
-}
-
-.item__btn {
-	position: absolute;
-	display: block;
+	color: #fff;
 	text-decoration: none;
-	text-transform: uppercase;
-	background-color: #3cc395;
-	padding: 9px 14px 9px 16px; 
+	margin-bottom: 3px;
+}
+
+.offer-item-icon {
+	position: absolute;
+	right: 7%;
+	bottom: 0%;
+	font-size: 50px;
+	color: #F79E42;
+}
+
+.offer-text-icon {
+	margin-left: 10px;
+	font-size: 15px;
+}
+
+.offer-sale {
+	text-align: right;
+	position: relative;
+}
+
+.offer-sale-title {
+	position: absolute;
+	font-family: 'Avenir Next Cyr Medium';
+	font-size: 16px;
 	color: #fff;
-	border-radius: 4px;
-}
-
-.shop__title {
-	background-color: #3dc3b6;
-}
-
-.title__text {
 	text-transform: uppercase;
-	color: #fff;
-	font-size: 31px;
-	padding: 22px 0px;
-	margin-left: 50px;
+	right: 0%;
+	top: 25px;
+
 }
 
-.shop__table {
+.offer-sale-text {
+	position: absolute;
+	font-family: 'Avenir Next Cyr Demi';
+	color: #fff;
+	font-size: 15px;
+	right: 80px;
+	top: 46px;
+}
+
+.offer-sale-number {
+	position: absolute;
+	font-family: 'Avenir Next Cyr Demi';
+	color: #fff;
+	font-size: 34px;
+	right: 0%;
+	top: 40px;
+}
+
+.offer-2 {
+	padding: 0 15px;
+}
+
+.offer-2 .offer-text {
+	background: url(../img/bg-4.png) no-repeat bottom right, #E0E0E0;
+	border-radius: 2px;
+	height: 100%;
+	padding-right: 15px;
+	padding-bottom: 0px;
+}
+
+.offer-2 .offer-title {
+	color: #2A292D;
+}
+
+.offer-2 .offer-item {
+	color: #2A292D;	
+}
+
+.offer-sale-title {
+	font-family: 'Avenir Next Cyr Medium';
+
+}
+
+.offer-3 {
+	padding-left: 15px;
+}
+
+
+.offer-3 .offer-text {
+	background-color: #74C1BB;
+	border-radius: 2px;
+	height: 100%;
+	padding-bottom: 0px;
+}
+
+.offer-item-text {
+	font-family: 'Avenir Next Cyr Medium';
+	font-size: 20px;
+	color: #fff;
+}
+
+.offer-item:hover {
+	color: #FF2E4B;
+	text-decoration: underline;
+	text-decoration-color: #FF2E4B;
+
+}
+
+.offer-button {
+	margin-top: 72px;
+	padding: 9px 24px;
+	background-color: #0D0506;
+	border-radius: 5px;
+	border: none;
+}
+
+.offer-button:hover {
+	background-color: #FF2E4B;
+}
+
+.sale-items {
+	margin-top: 34px;
+	width: 100%;
+
+}
+
+.sale-item {
+	padding: 47px 15px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	cursor: pointer;
+	transition: all 0.2s linear;
+}
+
+
+.sale-item:hover {
+	border-top: 1px solid #0D0506;
+	border-bottom: 1px solid #0D0506;
+}
+
+.sale-item:hover .sale-img-icon {
+	opacity: 1;
+}
+
+.sale-item:hover .sale-text-icon {
+	opacity: 1;
+}
+
+.sale-item:hover .sale-text-check-text {
+	opacity: 1;
+}
+
+.sale-item:hover .sale-text-price {
+	opacity: 1;
+}
+
+.sale-img {
+	background: url(../img/bg-3.png) no-repeat center, url(../img/bg-6.png) no-repeat top left;
+	position: relative;	
 	display: block;
-	margin: 48px auto;
+	width: 100%;
+	height: 267px;
+	margin-right: 0px;
+
 }
 
-.shop__table:first-child {
-	margin-left: 8%;
+.sale-img-icon {
+	position: absolute;
+	right: 2%;
+	font-size: 20px; 
+	color: #A09996;
+	opacity: 0;
 }
 
-.shop__table:last-child {
-	margin-right: 8%;
+.sale-img-icon:hover {
+	color: #FF2E4B;
 }
 
-.item__box {
-	border: 1px solid #dbdbdb;
-	border-bottom: 5px solid #a3e0cc;
-	text-align: center;
+.sale-text-icon {
+	color: #FF2E4B;
+	margin-right: 4px;
+	padding-top: 2px;
+	opacity: 0;
+}
+
+.sale-text-check-text {
+	font-size: 16px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	color: #2A292D;
+	opacity: 0;
+}
+
+.sale-text-price{
+	opacity: 0;
+	margin: 10px 0;
+}
+
+.sale-text-price-right {
+	margin-top: 24px;
+}
+
+.sale-text-price-left-old {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	color: #A09996;
+	text-decoration: line-through;
+}
+
+.sale-text-price-left-sale {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	padding: 1px 9px;
+	background-color: #FF2E4B;
+	border-radius: 5px;
+	color: #fff;
+	margin-left: 8px;
+}
+
+.sale-text-price-left-new {
+	font-family: 'PT Sans', sans-serif;	
+	font-weight: 700;
+	font-size: 32px;
+	color: #2A292D;
+}
+
+
+.sale-btn {
+	margin: 30px 0 104px 0;
+}
+
+
+.services {
+	background: url(../img/bg-7.png) no-repeat left, #E0E0E0;
+}
+
+.service {
+	margin-top: 82px; 
+}
+
+.services-left {
+	padding: 40px 0px 49px 30px;
+	background-color: #FF2E4B;
+	border-radius: 3px;
+}
+
+.services-left-item {
+	margin-bottom: 44px;
+}
+
+.services-left-item:last-child {
+	margin-bottom: 0;
+}
+
+.services-left-item-icon {
+	margin-right: 20px;
+	
+}
+
+.services-left-item-title {
+	font-family: 'Avenir Next Cyr Bold';
+	text-transform: uppercase;
+	font-size: 23px;
+	color: #0D0506;
+	margin-bottom: 5px;
+}
+
+
+.services-left-item-text {
+	font-family: 'Avenir Next Cyr Medium';
+	font-size: 20px;
+	color: #0D0506;
+}
+
+.services-right {
+	width: 100%;
+}
+
+.services-right-man {
+	background: url(../img/bg-8.png) no-repeat center;
+	border-radius: 3px;
+}
+
+.services-right-ped {
+	background: url(../img/bg-9.png) no-repeat center;
+	border-radius: 3px;
+}
+
+.services-right-title {
+	font-family: 'Avenir Next Cyr Bold';
+	text-transform: uppercase;
+	font-size: 28px;
+	color: #0D0506;
+	padding: 20px 0 103px 30px;
+}
+
+.services-btn {
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+.course {
+	margin-top: 74px;
+}
+
+.courses-item {
+	margin-bottom: 30px;
+	height: 320px;
+}
+
+.course-ven {
+	background: url(../img/bg-10.png) no-repeat center;
+	border-radius: 2px;
+	padding: 27px 0 32px 30px;
+	height: 100%;
+	color: #fff;
+}
+
+.course-blos {
+	background: url(../img/bg-11.png) no-repeat center;
+	border-radius: 2px;
+	padding: 27px 0 32px 30px;
+	height: 100%;
+	color: #2A292D;
+}
+
+.course-lep {
+	background: url(../img/bg-12.png) no-repeat center;
+	border-radius: 2px;
+	padding: 27px 0 32px 30px;
+	height: 100%;
+	color: #2A292D;
+}
+
+.course-omb {
+	background: url(../img/bg-13.png) no-repeat center;
+	border-radius: 2px;
+	padding: 27px 0 32px 30px;
+	height: 100%;
+	color: #fff;
+}
+
+.courses-title {
+	font-family: 'Prata', serif;
+	font-size: 34px;
+	
+}
+
+.courses-text {
+	font-family: 'Avenir Next Cyr Medium';
+	font-size: 20px;
+	
+	text-transform: uppercase;
+	margin-top: 7px;
+}
+
+.courses-price {
+	
+	font-size: 32px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	margin-top: 12px;
+}
+
+.courses-button {
+	padding: 8px 41px;
+	width: 224px;
+	background-color: #FF2E4B;
+	border-radius: 5px;
+	border: none;
+}
+
+.courses-btn {
+	margin-top: 10px;
+	margin-bottom: 70px;
+}
+
+.delivery {
+	margin-bottom: 100px;
+}
+
+.delivery-content {
+	background: url(../img/bg-14.png) no-repeat center right, #2A292D;
+	padding: 37px 0 35px 65px;
+}
+
+.delivery-content-texts-text {
+	color: #fff;
+}
+
+.delivery-content-texts-text-title {
+	font-family: 'Avenir Next Cyr Bold';
+	text-transform: uppercase;
+	font-size: 23px;
+}
+
+.delivery-content-texts-text-subtitle {
+	font-family: 'Avenir Next Cyr Medium';
+	font-size: 20px;
+}
+
+.delivery-content-texts-icon {
+	margin-left: 62px;
+}
+
+.delivery-button {
+	margin-top: 30px;
+	padding: 8px 41px;
+	background-color: #FF2E4B;
+	border-radius: 5px;
+	border: none;
+}
+
+.footer {
+	background-color: #F0F0F0;
+}
+
+.footer-container {
+	padding-bottom: 50px;
+	border-bottom: 1px solid #A09996;
+}
+
+.footer-left {
+	margin-top: 5px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+.footer-left-text {
+	font-family: 'Avenir Next Cyr Medium';
+	font-size: 13px;
+	color: #5D5D5D;
+	text-decoration: none;
+}
+
+.footer-left-text:hover {
+	color: #FF2E4B;
+	text-decoration: underline;
+	text-decoration-color: #FF2E4B;
+}
+
+.footer-left-icon {
+	margin-right: 6px;
+}
+
+.footer-sevices {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+}
+
+.footer-title {
+	font-size: 24px;
+	color: #2A292D;
 	margin-bottom: 30px;
 }
 
-.shop__item {
-	width: 200px;
-	height: 240px; 
-	padding: 35px 27px 30px 27px;
-}
-
-.shop__img {
-	text-align: center;
-}
-
-.item__name {
-	text-transform: uppercase;
-	color: #999;
-	text-align: center;
+.footer-text {
 	font-size: 16px;
-	font-family: 'Roboto Slab';
-	font-weight: 700;
-	margin-bottom: 12px;
-	margin-top: 20px;
+	color: #5D5D5D;
 }
 
-.sum__btn {
-	display: flex;
-	justify-content: center;
+.footer-text:hover {
+	color: #FF2E4B;
+	text-decoration: underline;
+	text-decoration-color: #FF2E4B;
 }
 
-.sum__text {
-	color: #999;
-	font-size: 16px;
-	font-family: 'Roboto Slab';
-	font-weight: 700;
-	margin: auto 10px;
-}
-
-.shop__btn {
-	display: block;
-	text-decoration: none;
-	text-transform: uppercase;
-	background-color: #3cc395;
-	padding: 10px; 
-	color: #fff;
-	border-radius: 4px;
-	margin-left: 6px; 
-	cursor: pointer;
-
-	transition: background-color .2s linear;
-}
-
-.shop__btn:hover {
-	background-color: #366f5c;
-}
-
-
-.footer {
-	background-color: #3cc3b5;
-}
-
-.footer__items {
-	justify-content: space-between;
-}
-
-.footer__col {
-	margin: 40px auto;
-}
-
-.footer__col:first-child {
-	margin-left: 7%;
-}
-
-.footer__col:last-child {
-	margin-right: 12%;
-}
-
-.footer__name {
-	text-transform: uppercase;
-	color: #fff;
-	font-size: 20px;
-	font-family: 'Roboto Slab';
-	font-weight: 700;
+.footer-item {
 	margin-bottom: 15px;
 }
 
-.tree__item {
-	color: #fff;
-	text-decoration: none;
-	font-size: 12px;
-	font-family: 'Roboto Slab';
+.footer-info-items {
+	columns: 2;
+}
+
+.footer-feedback-item {
+	margin-right: 26px;
+}
+
+.footer-feedback-tel {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+	color: #5D5D5D;
+	font-size: 18px;
+	margin-top: 30px;
+	margin-bottom: 2px;
+}
+
+.footer-feedback-time {
+	font-family: 'PT Sans', sans-serif;
 	font-weight: 400;
+	color: #5D5D5D;
+	font-size: 13px;
+	margin-bottom: 15px;
 }
 
-.end {
-	background-color: #2da89b;
+.footer-feedback-address {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	color: #5D5D5D;
+	font-size: 16px;
+	text-decoration: underline;
 }
 
-.copyright {
-	padding-top: 12px;
-	padding-bottom: 12px;
-	color: #fff;
-	font-size: 15px; 
-	text-align: center;
+.footer-feedback-address:hover {
+	color: #FF2E4B;
+	text-decoration: underline;
+	text-decoration-color: #FF2E4B;
 }
 
+.footer-feedback-mail {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	color: #5D5D5D;
+	font-size: 13px;
+	margin-top: 15px;
+}
 
+.footer-copy {
+	padding: 25px 0;
+}
+
+.footer-copy-text {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	color: #5D5D5D;
+	font-size: 12px;
+}
+
+.footer-copy-text-right {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 400;
+	color: #5D5D5D;
+	font-size: 12px;
+	text-decoration: underline;
+}
+
+.footer-copy-text-right:hover {
+	color: #FF2E4B;
+	text-decoration: underline;
+	text-decoration-color: #FF2E4B;
+}

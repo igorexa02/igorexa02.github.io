@@ -2,319 +2,617 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Пробная верстка</title>
+	<title>ShikNail</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Prata&display=swap&subset=cyrillic" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/80df4957f1.js"></script>
+	
 </head>
 <body>
-	<div class="header">	
-		<div class="head-con content">
-			<a href="#"><h2 class="logo">Aditii</h2></a>
-			<div class="content-left">	
-				<a href="#"><img src="img/shop.png" alt="" class="shop"></a>
-				<p class="summ">$300</p>
-			</div>	
+	<header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+						<ul class="justify-content-between d-flex header-menu">
+							<li>
+								<a class="align-items-center d-flex" href="#">
+									<img src="img/icon/location.png" alt="" class="header-icon">
+									<p class="header-text">Благовещенск</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="header-text">Доставка и оплата</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="header-text">Оптовикам</p>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<p class="header-text">Представители</p>
+								</a>
+							</li>
+						</ul>
+				</div>
+				<div class="col-lg-4 ml-auto d-flex">
+					<div class="header-phone">
+						<div class="header-number">
+							<div class="d-flex">
+								<img src="img/icon/phone-call.png" alt="">
+								<p class="header-number-phone">8-800-12-12-999</p>
+							</div>
+							<p class="header-number-mode">пн-пт с 3:00 до 12:00 (MSK)</p>
+						</div>
+					</div>
+					<div class="header-login ml-auto d-flex align-items-center">
+						<a href="#">
+							<p class="header-text header-login-input">Войти</p>
+						</a>
+						<a href="#">
+							<p class="header-text">Регистрация</p>
+						</a>	
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="content__nav">
-			<div class="nav content">
-				<ul class="menu">
-					<li><a href="#" class="menu__item">home</a></li>
-					<li><a href="#" class="menu__item">sale</a></li>
-					<li><a href="#" class="menu__item">handbags</a></li>
-					<li><a href="#" class="menu__item">wallets</a></li>
-					<li><a href="#" class="menu__item">accessories</a></li>
-					<li><a href="#" class="menu__item">mans store</a></li>
-					<li><a href="#" class="menu__item">shoes</a></li>
-					<li><a href="#" class="menu__item">vintage</a></li>
-					<li><a href="#" class="menu__item">services</a></li>
-					<li><a href="#" class="menu__item last__item">contact us</a></li>
-				</ul>
+	</header>
+	<div class="menu">
+		<div class="container">
+			<div class="row d-flex menu-bg">
+				<div class="col-lg-1">
+					<div class="menu-conteiner">
+						<img src="img/icon/menu.png" alt="" class="menu-conteiner-selector">
+					</div>
+				</div>
+				<div class="menu-logo col-lg-2 align-self-center">
+					<img src="img/logo.png" alt="">
+				</div>
+				<div class="col-lg-6 d-flex align-self-center justify-content-end">
+						<input type="text" class="menu-input">
+						<div class="menu-input-icon">
+							<img src="img/icon/search.png" alt="" class="menu-input-icon-img">
+						</div>
+				</div>
+				<div class="col-lg-3 justify-content-between d-flex">
+					<a href="#" class="menu-favorite d-flex align-items-center align-self-center">
+						
+						<p class="menu-favorite-text"> <i class="far fa-heart menu-favorite-icon"></i> Избранное</p>
+					</a>
+					<div class="menu-shop d-flex align-items-center align-self-center">
+						<img src="img/icon/bag.png" alt="" class="menu-favorite-icon">
+						<a href="#" class="menu-shop-text">Корзина</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="slider__box">
-		<div class="slider fade">	
-			<div class="content">
-				<div class="slider-left">
-					<img src="img/slider1.png" alt="" class="slider__img">	
+	<div class="container-solid slider-container">
+		<div class="row">
+			<div class="pref align-self-center ml-auto">
+				<a href="#"><img src="img/pref.png" alt=""></a>
+			</div>
+			<div class="container slider-conteiner-content">
+				<div class="row ">
+					<div class="col-lg-6">
+						<h2 class="slider-container-title">ВРЕМЯ ДЛЯ ТВОЕГО <br> ПРЕОБРАЖЕНИЯ</h2>
+						<div class="slider-container-content d-flex">
+							<h1 class="slider-container-subtitle">- 40%</h1>
+							<div class="slider-container-text">
+								<p class="slider-container-content-text">Дополнительно</p>
+								<h2 class="slider-container-content-title">на лаки</h2>
+							</div>
+						</div>
+						<div class="slider-button-cond d-flex align-items-center">
+							<button class="button d-flex align-items-center">
+								<p class="button-text">
+									Выбрать <i class="fas fa-arrow-right button-arrow"></i>
+								</p>
+							</button>
+							<div class="slider-cond">
+								<p class="slider-cond-text"><i class="fas fa-star-of-life slider-cond-star"></i> Условия внутри</p>
+							</div>
+						</div>	
+					</div>
 				</div>
-				<div class="slider-right">
-					<h3 class="slider-title">Cowhide <br> Standard Crew</h3>
-					<p class="slider__text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
-					<div class="button">
-						<a href="#" class="btn1">Shop now</a>
-					</div>	
+				<div class="slider-dots justify-content-center d-flex align-self-end">
+					<span class="slider-dots-dot"></span>
+					<span class="slider-dots-dot"></span>
+					<span class="slider-dots-dot"></span>
+					<span class="slider-dots-dot"></span>
 				</div>
 			</div>
+		<div class="next align-self-center mr-auto">
+			<a href="#"><img src="img/next.png" alt=""></a>
 		</div>
-		<div class="slider fade">	
-			<div class="content">
-				<div class="slider-left">
-					<img src="img/slider2.png" alt="" class="slider__img">	
-				</div>
-				<div class="slider-right">
-					<h3 class="slider-title">Cowhide <br> Standard Crew</h3>
-					<p class="slider__text"> </p>
-					<div class="button">
-						<a href="#" class="btn1">Shop now</a>
-					</div>	
-				</div>
-			</div>
-		</div>
-		<div class="slider fade">	
-			<div class="content">
-				<div class="slider-left">
-					<img src="img/slider3.png" alt="" class="slider__img">	
-				</div>
-				<div class="slider-right">
-					<h3 class="slider-title">Cowhide <br> Standard Crew</h3>
-					<p class="slider__text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
-					<div class="button">
-						<a href="#" class="btn1">Shop now</a>
-					</div>	
-				</div>
-			</div>
-		</div>
-		<div class="slider fade">	
-			<div class="content">
-				<div class="slider-left">
-					<img src="img/slider4.png" alt="" class="slider__img">	
-				</div>
-				<div class="slider-right">
-					<h3 class="slider-title">Cowhide <br> Standard Crew</h3>
-					<p class="slider__text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
-					<div class="button">
-						<a href="#" class="btn1">Shop now</a>
-					</div>	
-				</div>
-			</div>
-		</div>
-		<div class="slider fade">	
-			<div class="content">
-				<div class="slider-left">
-					<img src="img/slider5.png" alt="" class="slider__img">	
-				</div>
-				<div class="slider-right">
-					<h3 class="slider-title">Cowhide <br> Standard Crew</h3>
-					<p class="slider__text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of organic cotton and comes in a regular fit. </p>
-					<div class="button">
-						<a href="#" class="btn1">Shop now</a>
-					</div>	
-				</div>
-			</div>
-		</div>
-		<div class="dots">
-			<span class="dot" onclick="currentSlider(1)"></span>
-			<span class="dot" onclick="currentSlider(2)"></span>
-			<span class="dot" onclick="currentSlider(3)"></span>
-			<span class="dot" onclick="currentSlider(4)"></span>
-			<span class="dot" onclick="currentSlider(5)"></span>
-		</div>
-	</div>
-	<div class="items content">
-		<div class="item">
-			<div class="item__img">
-				<img src="img/p1.png" alt="">
-			</div>
-			<div class="item__about">
-				<p class="item__text">branded<br>shoes</p>
-				<a href="#" class="item__btn">shop</a>
-			</div>
-		</div>
-		<div class="item">
-			<div class="item__img--two">
-				<img src="img/p2.png" alt="">
-			</div>
-			<div class="item__about">
-				<p class="item__text">branded<br>tshirts</p>
-				<a href="#" class="item__btn">shop</a>
-			</div>
-		</div>
-		<div class="item">
-			<div class="item__img--three">
-				<img src="img/p3.png" alt="">
-			</div>
-			<div class="item__about">
-				<p class="item__text">branded<br>cargos</p>
-				<a href="#" class="item__btn">shop</a>
-			</div>
 		</div>	
 	</div>
-	<div class="shop__title">
-		<div class="content">
-			<h2 class="title__text">featured products</h2>
+	<section class="container">
+			<hr width=200px color="black" align="left"> 
+			<p class="choice-title">Выбор покупателей</p>
+		
+	<div class="row">
+		<div class="items d-flex">
+			<div class="item col-lg-3">
+				<div class="item-img d-flex justify-content-center ">
+					<img src="img/item1.png" alt=""> 
+					<img src="img/subItem1.png" alt="" class="whithSubItem">
+				</div>
+				<div class="item-text">
+					<div class="item-text-title">
+						Полигель Shik Nail
+					</div>
+					<div class="item-text-name">
+						Гель-лак № 019 перламутровый блеск темно-розовый
+					</div>
+				</div>
+			</div>
+			<div class="item col-lg-3">
+				<div class="item-img d-flex justify-content-center ">
+					<img src="img/item2.png" alt=""> 
+					<img src="" alt="" class="whithSubItem">
+				</div>
+				<div class="item-text">
+					<div class="item-text-title">
+						Полигель Shik Nail
+					</div>
+					<div class="item-text-name">
+						Гель-лак № 019 перламутровый блеск темно-розовый
+					</div>
+				</div>
+			</div>
+			<div class="item col-lg-3">
+				<div class="item-img d-flex justify-content-center ">
+					<img src="img/item1.png" alt=""> 
+					<img src="img/subItem2.png" alt="" class="whithSubItem">
+				</div>
+				<div class="item-text">
+					<div class="item-text-title">
+						Полигель Shik Nail
+					</div>
+					<div class="item-text-name">
+						Гель-лак № 019 перламутровый блеск темно-розовый
+					</div>
+				</div>
+			</div>
+			<div class="item col-lg-3">
+				<div class="item-img d-flex justify-content-center ">
+					<img src="img/item4.png" alt=""> 
+					<img src="" alt="" class="whithSubItem">
+				</div>
+				<div class="item-text">
+					<div class="item-text-title">
+						Полигель Shik Nail
+					</div>
+					<div class="item-text-name">
+						Гель-лак № 019 перламутровый блеск темно-розовый
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<div class="content">
-		<div class="shop__table">
-			<div class="item__box">
-				<div class="shop__item">
-					<div class="shop__img">
-						<img src="img/t1.png" alt="">
+	<div class="item-btn justify-content-center d-flex">
+		<button class="button d-flex align-items-center">
+			<p class="button-text">
+				Все продукты <i class="fas fa-arrow-right button-arrow"></i>
+			</p>
+		</button>
+	</div>	
+	</section>
+
+	<div class="offer">
+		<div class="container">
+			<div class="row">
+				<div class="offer-1 col-lg-4">
+					<div class="offer-text">
+						<h2 class="offer-title">
+						обо всём
+						</h2>
+						<div >
+							<ul>
+								<li>
+									<a href="#"><p class="offer-item">Обзоры<i class="fas fa-chevron-right offer-text-icon"></i></p></a>
+								</li>
+								<li>
+									<a href="#"><p class="offer-item">Видеообзоры<i class="fas fa-chevron-right offer-text-icon"></i></p></a>
+								</li>
+								<li>
+									<a href="#"><p class="offer-item">Поможем выбрать<i class="fas fa-chevron-right offer-text-icon"></i></p></a>
+								</li>
+								<li>
+									<a href="#"><p class="offer-item">Статьи<i class="fas fa-chevron-right offer-text-icon"></i></p></a>
+								</li>
+								<li>
+									<a href="#"><p class="offer-item">Новости<i class="fas fa-chevron-right offer-text-icon"></i></p></a>
+								</li>
+							</ul>
+						</div>
+						<p class="offer-item-icon "><i class="far fa-comment-dots"></i></p>
+					</div>	
+				</div>
+				<div class=" offer-2 col-lg-4">
+					<div class="offer-text">
+						<h2 class="offer-title">
+							распродажи						
+						</h2>
+						<div >
+							<ul>
+								<li>
+									<a href="#"><p class="offer-item">Полигели<i class="fas fa-chevron-right offer-text-icon"></i></p></a>
+								</li>
+								<li>
+									<a href="#"><p class="offer-item">Расходные материалы<i class="fas fa-chevron-right offer-text-icon"></i></p></a>
+								</li>
+								<li>
+									<a href="#"><p class="offer-item">Курсы<i class="fas fa-chevron-right offer-text-icon"></i></p></a>
+								</li>
+							</ul>
+						</div>
+						<div class="offer-sale">
+							<h2 class="offer-sale-title">скидки</h2>
+							<p class="offer-sale-text">
+								до
+							</p>
+							<p class="offer-sale-number">
+								— 40%
+							</p>
+						</div>
+					</div>	
+				</div>
+				<div class=" offer-3 col-lg-4">
+					<div class="offer-text">
+						<h2 class="offer-title">
+							отхвати за рубль
+						</h2>
+						<div>
+							<p class="offer-item-text">Каждую неделю получай товары всего за 1 рубль</p>
+						</div>
+						<button class="offer-button d-flex ml-auto align-self-end">
+							<p class="button-text"> Участвуй в розыгрыше<i class="fas fa-arrow-right button-arrow"></i></p>
+						</button>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="sale">
+		<div class="container">
+			<hr width=200px color="black" align="left"> 
+			<p class="choice-title">Выгодно сегодня # ShikNailSALE</p>
+			<div class="row">
+				<div class="sale-items d-flex justify-content-between">
+					<div class="sale-item col-lg-3">
+						<div class="sale-img d-flex justify-content-center ">
+							<img src="img/item2.png" alt=""> 
+							<img src="" alt="" class="whithSubItem">
+							<div class="sale-img-icon">
+								<i class="far fa-heart"></i> 
+							</div>
+						</div>
+						<div class="item-text">
+							<div class="sale-text-check d-flex justify-content-center">
+								<i class="fas fa-check sale-text-icon"></i><p class="sale-text-check-text">В наличии</p>
+							</div>
+							<div class="item-text-title">
+								Средство для обезжиривания ногтей
+							</div>
+							<div class="item-text-name">
+								Для натуральных и искусственных ногтей
+							</div>
+							<div class="sale-text-price d-flex">
+								<div class="sale-text-price-left">
+									<div class="d-flex align-items-center">
+										<p class="sale-text-price-left-old">1500 р.</p>
+										<p class="sale-text-price-left-sale">-750 р.</p>
+									</div>
+									<h3 class="sale-text-price-left-new d-flex">750 р.</h3>
+								</div>
+								<div class="sale-text-price-right ml-auto">
+									<a href="#" class="sale-text-price-right-icon"><img src="img/icon/bag2.png" alt=""></a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="item__name">
-						branded shoe
+					<div class="sale-item col-lg-3">
+						<div class="sale-img d-flex justify-content-center ">
+							<img src="img/item1.png" alt=""> 
+							<img src="img/subItem2.png" alt="" class="whithSubItem">
+							<div class="sale-img-icon">
+								<i class="far fa-heart"></i> 
+							</div>
+						</div>
+						<div class="item-text">
+							<div class="sale-text-check d-flex justify-content-center">
+								<i class="fas fa-check sale-text-icon"></i><p class="sale-text-check-text">В наличии</p>
+							</div>
+							<div class="item-text-title">
+								Полигель Shik Nail
+							</div>
+							<div class="item-text-name">
+								Гель-лак № 112 с крупными блестками темно-розовый
+							</div>
+							<div class="sale-text-price d-flex">
+								<div class="sale-text-price-left">
+									<div class="d-flex align-items-center">
+										<p class="sale-text-price-left-old">1500 р.</p>
+										<p class="sale-text-price-left-sale">-750 р.</p>
+									</div>
+									<h3 class="sale-text-price-left-new d-flex">750 р.</h3>
+								</div>
+								<div class="sale-text-price-right ml-auto">
+									<a href="#" class="sale-text-price-right-icon"><img src="img/icon/bag2.png" alt=""></a>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="sum__btn">
-						<div class="sum__text">$300</div>
-						<div class="shop__btn">buy now</div>
+					<div class="sale-item col-lg-3">
+						<div class="sale-img d-flex justify-content-center ">
+							<img src="img/item1.png" alt=""> 
+							<img src="img/subItem1.png" alt="" class="whithSubItem">
+							<div class="sale-img-icon">
+								<i class="far fa-heart"></i> 
+							</div>
+						</div>
+						<div class="item-text">
+							<div class="sale-text-check d-flex justify-content-center">
+								<i class="fas fa-check sale-text-icon"></i><p class="sale-text-check-text">В наличии</p>
+							</div>
+							<div class="item-text-title">
+								Полигель Shik Nail
+							</div>
+							<div class="item-text-name">
+								Гель-лак № 019 перламутровый блеск темно-розовый
+							</div>
+							<div class="sale-text-price d-flex">
+								<div class="sale-text-price-left">
+									<div class="d-flex align-items-center">
+										<p class="sale-text-price-left-old">1500 р.</p>
+										<p class="sale-text-price-left-sale">-750 р.</p>
+									</div>
+									<h3 class="sale-text-price-left-new d-flex">750 р.</h3>
+								</div>
+								<div class="sale-text-price-right ml-auto">
+									<a href="#" class="sale-text-price-right-icon"><img src="img/icon/bag2.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sale-item col-lg-3">
+						<div class="sale-img d-flex justify-content-center ">
+							<img src="img/item4.png" alt=""> 
+							<img src="" alt="" class="whithSubItem">
+							<div class="sale-img-icon">
+								<i class="far fa-heart"></i> 
+							</div>
+						</div>
+						<div class="item-text">
+							<div class="sale-text-check d-flex justify-content-center">
+								<i class="fas fa-check sale-text-icon"></i><p class="sale-text-check-text">В наличии</p>
+							</div>
+							<div class="item-text-title">
+								Скульптурный гель
+							</div>
+							<div class="item-text-name">
+								Гель скульптурный для моделирования ногтей
+							</div>
+							<div class="sale-text-price d-flex">
+								<div class="sale-text-price-left">
+									<div class="d-flex align-items-center">
+										<p class="sale-text-price-left-old">1500 р.</p>
+										<p class="sale-text-price-left-sale">-750 р.</p>
+									</div>
+									<h3 class="sale-text-price-left-new d-flex">750 р.</h3>
+								</div>
+								<div class="sale-text-price-right ml-auto">
+									<a href="#" class="sale-text-price-right-icon"><img src="img/icon/bag2.png" alt=""></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>	
-			<div class="item__box">
-				<div class="shop__item">
-					<div class="shop__img">
-						<img src="img/t4.png" alt="">
-					</div>
-					<div class="item__name">
-						branded shoe
-					</div>
-					<div class="sum__btn">
-						<div class="sum__text">$300</div>
-						<div class="shop__btn">buy now</div>
-					</div>
-				</div>
+			</div>
+		<div class="sale-btn justify-content-center d-flex">
+				<button class="button d-flex align-items-center">
+					<p class="button-text">
+						Все продукты <i class="fas fa-arrow-right button-arrow"></i>
+					</p>
+				</button>
 			</div>	
 		</div>
-		<div class="shop__table">
-			<div class="item__box">
-				<div class="shop__item">
-					<div class="shop__img">
-						<img src="img/t2.png" alt="">
-					</div>
-					<div class="item__name">
-						branded shoe
-					</div>
-					<div class="sum__btn">
-						<div class="sum__text">$300</div>
-						<div class="shop__btn">buy now</div>
+	</div>
+	<div class="services">
+		<div class="container">
+			<hr width=200px color="black" align="left"> 
+			<p class="choice-title">Наши услуги</p>
+			<div class="row d-flex service">
+				<div class="col-lg-5">
+					<div class="services-left">
+						<div class="services-left-item d-flex align-items-center">
+							<img src="img/icon/clock.png" alt="" class="services-left-item-icon">
+							<div class="">
+								<p class="services-left-item-title">быстро</p>
+								<p class="services-left-item-text">Все готово за 1,5 часа</p>
+							</div>
+						</div>
+						<div class="services-left-item d-flex align-items-center">
+							<img src="img/icon/star.png" alt="" class="services-left-item-icon">
+							<div class="">
+								<p class="services-left-item-title">МОДНО</p>
+								<p class="services-left-item-text">Каждый месяц новые коллекции</p>
+							</div>
+						</div>
+						<div class="services-left-item d-flex align-items-center">
+							<img src="img/icon/umbrella2.png" alt="" class="services-left-item-icon">
+							<div class="">
+								<p class="services-left-item-title">СТОЙКО</p>
+								<p class="services-left-item-text">Безупречное покрытие на месяц</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>	
-			<div class="item__box">
-				<div class="shop__item">
-					<div class="shop__img">
-						<img src="img/t5.png" alt="">
-					</div>
-					<div class="item__name">
-						branded shoe
-					</div>
-					<div class="sum__btn">
-						<div class="sum__text">$300</div>
-						<div class="shop__btn">buy now</div>
+				<div class="col-lg-7 d-flex">
+					<div class="services-right d-flex flex-column">
+						<div class="services-right-man d-flex justify-content-start">
+							<p class="services-right-title">МАНИКЮР</p>
+						</div>
+						<div class="services-right-ped d-flex mt-auto">
+							<p class="services-right-title">ПЕДИКЮР</p>
+						</div>
 					</div>
 				</div>
+			</div>
+			<div class="services-btn justify-content-center d-flex">
+				<button class="button d-flex align-items-center">
+					<p class="button-text">
+						Все услуги <i class="fas fa-arrow-right button-arrow"></i>
+					</p>
+				</button>
 			</div>	
 		</div>
-		<div class="shop__table">
-			<div class="item__box">
-				<div class="shop__item">
-					<div class="shop__img">
-						<img src="img/t3.png" alt="">
-					</div>
-					<div class="item__name">
-						branded shoe
-					</div>
-					<div class="sum__btn">
-						<div class="sum__text">$300</div>
-						<div class="shop__btn">buy now</div>
-					</div>
-				</div>
-			</div>	
-			<div class="item__box">
-				<div class="shop__item">
-					<div class="shop__img">
-						<img src="img/p3.png" alt="">
-					</div>
-					<div class="item__name">
-						branded shoe
-					</div>
-					<div class="sum__btn">
-						<div class="sum__text">$300</div>
-						<div class="shop__btn">buy now</div>
+		</div>
+	<div class="courses">
+		<div class="container">
+			<hr width=200px color="black" align="left"> 
+			<p class="choice-title">Курсы и мастер-классы</p>
+			<div class="row course">
+				<div class="col-lg-6 courses-item">
+					<div class="course-ven d-flex flex-column">
+						<p class="courses-title">Вензеля</p>
+						<p class="courses-text">курсы по дизайну</p>
+						<p class="courses-price">750 рублей</p>
+						<button class="courses-button d-flex align-items-center mt-auto">
+							<p class="button-text">
+								Программа курса <i class="fas fa-arrow-right button-arrow"></i>
+							</p>
+						</button>
 					</div>
 				</div>
-			</div>	
+				<div class="col-lg-6 courses-item">
+					<div class="course-blos d-flex flex-column">
+						<p class="courses-title">Blossom</p>
+						<p class="courses-text">курсы по дизайну</p>
+						<p class="courses-price">3 000 рублей</p>
+						<button class="courses-button d-flex align-items-center mt-auto">
+							<p class="button-text">
+								Программа курса <i class="fas fa-arrow-right button-arrow"></i>
+							</p>
+						</button>
+					</div>
+				</div>
+				<div class="col-lg-6 courses-item">
+					<div class="course-lep d-flex flex-column">
+						<p class="courses-title">Лепка <br> пластилином</p>
+						<p class="courses-text">курсы по дизайну</p>
+						<p class="courses-price">3 000 рублей</p>
+						<button class="courses-button d-flex align-items-center mt-auto">
+							<p class="button-text">
+								Программа курса <i class="fas fa-arrow-right button-arrow"></i>
+							</p>
+						</button>
+					</div>
+				</div>
+				<div class="col-lg-6 courses-item">
+					<div class="course-omb d-flex flex-column">
+						<p class="courses-title">Омбре. Поперечный градиент</p>
+						<p class="courses-text">курсы по дизайну</p>
+						<p class="courses-price">3 000 рублей</p>
+						<button class="courses-button d-flex align-items-center mt-auto">
+							<p class="button-text">
+								Программа курса <i class="fas fa-arrow-right button-arrow"></i>
+							</p>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="courses-btn justify-content-center d-flex">
+				<button class="button d-flex align-items-center">
+					<p class="button-text">
+						Все курсы <i class="fas fa-arrow-right button-arrow"></i>
+					</p>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="delivery">
+		<div class="container delivery-content">
+			<div class="d-flex align-items-center">
+				<div class="delivery-content-texts-text">
+					<h3 class="delivery-content-texts-text-title">доставка и оплата</h3>
+					<p class="delivery-content-texts-text-subtitle">До мечты рукой подать :)</p>
+				</div>
+				<div class="delivery-content-texts-icon">
+					<img src="img/icon/car.png" alt="">
+				</div>	
+			</div>
+			<button class="delivery-button d-flex align-items-center">
+				<p class="button-text">
+					Узнать подробнее <i class="fas fa-arrow-right button-arrow"></i>
+				</p>
+			</button>
 		</div>
 	</div>
 	<div class="footer">
-		<div class="content footer__items">
-				<div class="footer__col">
-					<div class="footer__name">
-						featured sale				
-					</div>
-					<div class="tree__items">
-						<ul class="footer__tree">
-							<li><a href="#" class="tree__item">Alexis Hudson</a></li>
-							<li><a href="#" class="tree__item">American Apparel</a></li>
-							<li><a href="#" class="tree__item">Ben Sherman</a></li>
-							<li><a href="#" class="tree__item">Big Buddha</a></li>
-							<li><a href="#" class="tree__item">Chanel</a></li>
-							<li><a href="#" class="tree__item">Christian Audigier</a></li>
-							<li><a href="#" class="tree__item">Coach</a></li>
-							<li><a href="#" class="tree__item">Cole Haan</a></li>
+		<div class="container">
+			<div class="row footer-container">
+				<div class="col-lg-2">
+					<ul>
+						<li class="footer-left">
+							<a href="#" class="footer-left-text"><img src="img/icon/box.png" class="footer-left-icon" alt="">Оптовикам</a>
+						</li>
+						<li class="footer-left">
+							<a href="#" class="footer-left-text"><img src="img/icon/user.png" class="footer-left-icon" alt="">Представители</a>
+						</li>
 					</ul>
+				</div>
+				<div class="col-lg-3">
+					<div class="footer-sevices">
+						<h3 class="footer-title">Сервис и поддержка</h3>
+						<ul>
+							<li class="footer-item"><a href="#" class="footer-text">Как сделать заказ</a></li>
+							<li class="footer-item"><a href="#" class="footer-text">Доставка и оплата</a></li>
+							<li class="footer-item"><a href="#" class="footer-text">Вопросы и ответы</a></li>
+							<li class="footer-item"><a href="#" class="footer-text">Политика конфеденциальности</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="footer__col">
-					<div class="footer__name">
-						MENS STORE				
-					</div>
-					<div class="tree__items">
-						<ul class="footer__tree">
-							<li><a href="#" class="tree__item">Alexis Hudson</a></li>
-							<li><a href="#" class="tree__item">American Apparel</a></li>
-							<li><a href="#" class="tree__item">Ben Sherman</a></li>
-							<li><a href="#" class="tree__item">Big Buddha</a></li>
-							<li><a href="#" class="tree__item">Chanel</a></li>
-							<li><a href="#" class="tree__item">Christian Audigier</a></li>
-							<li><a href="#" class="tree__item">Coach</a></li>
-							<li><a href="#" class="tree__item">Cole Haan</a></li>
-					</ul>
+				<div class="col-lg-4">
+					<div class="footer-info">
+						<h3 class="footer-title">О компании</h3>
+						<ul class="footer-info-items">
+							<li class="footer-item"><a href="#" class="footer-text">Главная</a></li>
+							<li class="footer-item"><a href="#" class="footer-text">Каталог</a></li>
+							<li class="footer-item"><a href="#" class="footer-text">Новинки</a></li>
+							<li class="footer-item"><a href="#" class="footer-text">Услуги</a></li>
+							<li class="footer-item"><a href="#" class="footer-text">Обучение</a></li>
+							<li class="footer-item"><a href="#" class="footer-text">Информация</a></li>
+						</ul>
 					</div>
 				</div>
-				<div class="footer__col">
-					<div class="footer__name">
-						wOMEN sTORE				
-					</div>
-					<div class="tree__items">
-						<ul class="footer__tree">
-							<li><a href="#" class="tree__item">Alexis Hudson</a></li>
-							<li><a href="#" class="tree__item">American Apparel</a></li>
-							<li><a href="#" class="tree__item">Ben Sherman</a></li>
-							<li><a href="#" class="tree__item">Big Buddha</a></li>
-							<li><a href="#" class="tree__item">Chanel</a></li>
-							<li><a href="#" class="tree__item">Christian Audigier</a></li>
-							<li><a href="#" class="tree__item">Coach</a></li>
-							<li><a href="#" class="tree__item">Cole Haan</a></li>
-					</ul>
+				<div class="col-lg-3">
+					<div class="footer-feedback">
+						<h3 class="footer-title">Оставайтесь на связи</h3>
+						<ul class="d-flex">
+							<li class="footer-feedback-item"><a href="#"><img src="img/icon/inst.png" alt=""></a></li>
+							<li class="footer-feedback-item"><a href="#"><img src="img/icon/vk.png" alt=""></a></li>
+							<li class="footer-feedback-item"><a href="#"><img src="img/icon/facebook.png" alt=""></a></li>
+							<li class="footer-feedback-item"><a href="#"><img src="img/icon/od.png" alt=""></a></li>
+						</ul>
+						<h2 class="footer-feedback-tel">8-800-12-12-999</h2>
+						<p class="footer-feedback-time">пн-пт с 3:00 до 12:00 (MSK)</p>
+						<a href="#" class="footer-feedback-address">Адреса магазинов г. Благовещенск</a>
+						<p class="footer-feedback-mail">info@shiknail.ru</p>
 					</div>
 				</div>
-				<div class="footer__col">
-					<div class="footer__name">
-						qUICK LINKS				
-					</div>
-					<div class="tree__items">
-						<ul class="footer__tree">
-							<li><a href="#" class="tree__item">Alexis Hudson</a></li>
-							<li><a href="#" class="tree__item">American Apparel</a></li>
-							<li><a href="#" class="tree__item">Ben Sherman</a></li>
-							<li><a href="#" class="tree__item">Big Buddha</a></li>
-							<li><a href="#" class="tree__item">Chanel</a></li>
-							<li><a href="#" class="tree__item">Christian Audigier</a></li>
-							<li><a href="#" class="tree__item">Coach</a></li>
-							<li><a href="#" class="tree__item">Cole Haan</a></li>
-					</ul>
-					</div>
-				</div>
+			</div>
+			<div class="footer-copy d-flex">
+				<p class="footer-copy-text">© 2019 Shik Nail. Все права защищены</p>
+				<a href="http://darkstudio.pro/" class="footer-copy-text-right ml-auto">Разработка сайта Dark Studio</a>
+			</div>
 		</div>
 	</div>
-	<div class="end">
-		<div class="copyright">
-			Copyright © 2013 Css Author
-		</div>
-	</div>
-	<script src="js/main.js"></script>
 </body>
-</html>	
